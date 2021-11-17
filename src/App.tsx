@@ -1,11 +1,12 @@
 import './App.css';
-import { Navbar } from './components'
+import { Navbar } from './components';
+import ThemeProvider from './contexts/ThemeContext';
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider>
       <Navbar />
-    </div>
+    </ThemeProvider>
   );
 }
 
