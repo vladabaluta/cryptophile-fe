@@ -1,18 +1,9 @@
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import { createContext, useState } from 'react';
 import darkTheme from '../themes/dark';
 import lightTheme from '../themes/light';
-import { createGlobalStyle } from 'styled-components';
-import { createContext, useState } from 'react';
 import IThemeContext from '../interfaces/IThemeContext';
-
-const GlobalStyles = createGlobalStyle`
-
-  `;
-
-type ThemeContextType = {
-  isDarkTheme: boolean;
-  toggleTheme: () => void;
-};
+import variables from '../themes/variables';
 
 export const ThemeContext = createContext<IThemeContext>({
   isDarkTheme: false,
@@ -25,8 +16,11 @@ const ThemeProvider = ({ children }: any) => {
 
   return (
     <ThemeContext.Provider value={{ toggleTheme, isDarkTheme }}>
-      <GlobalStyles />
-      <StyledThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>{children}</StyledThemeProvider>
+      <StyledThemeProvider
+        theme={isDarkTheme ? Object.assign(darkTheme, variables) : Object.assign(lightTheme, variables)}
+      >
+        {children}
+      </StyledThemeProvider>
     </ThemeContext.Provider>
   );
 };

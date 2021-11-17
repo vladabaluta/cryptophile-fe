@@ -1,4 +1,6 @@
-export default {
+import ITheme from '../interfaces/ITheme';
+
+const darkTheme: ITheme = {
   colors: {
     text: '#fff',
     background: '#000',
@@ -8,3 +10,5 @@ export default {
     border: '',
   },
 };
+
+export default darkTheme;

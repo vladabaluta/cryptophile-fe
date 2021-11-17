@@ -1,2 +1,8 @@
 // file for responsiveness and other css variables
-export default {};
+const variables = {
+  spacing: {},
+  fonts: {},
+  breakpoints: {},
+};
+
+export default variables;
