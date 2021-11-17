@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import './App.css';
+import { Coins, Portfolio } from './pages';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Navbar } from './components';
 import ThemeProvider from './contexts/ThemeContext';
 
@@ -13,12 +14,18 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
-  return (
-    <ThemeProvider>
-      <GlobalStyles />
-      <Navbar />
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider>
+			<GlobalStyles />
+			<Router>
+				<Navbar />
+				<Route path="/coins">
+					<Coins />
+				</Route>
+				<Portfolio />
+			</Router>
+		</ThemeProvider>
+	);
 };
 
 export default App;
