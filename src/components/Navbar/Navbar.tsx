@@ -5,11 +5,10 @@ const Navbar = (props: any) => {
 		<S.Navbar>
 			<S.Logo>Cryptophile</S.Logo>
 			<S.Menu>
-				<S.LinkMenuItems href="">Coins</S.LinkMenuItems>
-				<S.LinkMenuItems href="">Portofolio</S.LinkMenuItems>
-				<S.LinkMenuItems href="">Exchanges</S.LinkMenuItems>
-				<S.LinkMenuItems href="">Login</S.LinkMenuItems>
-				<S.LinkMenuItems href="">Register</S.LinkMenuItems>
+				<S.LinkMenuItems to="/coins">Coins</S.LinkMenuItems>
+				<S.LinkMenuItems to="/portfolio">Portofolio</S.LinkMenuItems>
+				<S.LinkMenuItems to="/">Login</S.LinkMenuItems>
+				<S.LinkMenuItems to="/">Register</S.LinkMenuItems>
 			</S.Menu>
 		</S.Navbar>
 	);

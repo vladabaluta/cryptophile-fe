@@ -1,33 +1,43 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Navbar = styled.div`
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 	padding: 0 2rem;
-	background-color: aliceblue;
-	height: 4rem;
+	background-color: ${({ theme }) => theme.colors.navbarBg};
 	align-items: center;
 	flex-wrap: wrap;
 `;
 
 export const Logo = styled.a`
-	color: #7b7fda;
+	color: ${({ theme }) => theme.colors.logo};
 	text-decoration: none;
 	font-weight: 800;
-	font-size: 1.7rem;
+	font-size: 1.75rem;
+	padding: 0.75rem 0;
+
+	&:active {
+		color: ${({ theme }) => theme.colors.logo};
+	}
 `;
 
 export const Menu = styled.div`
-	font-size: 1rem;
 	transition: all 0.3 ease-in;
 `;
 
-export const LinkMenuItems = styled.a`
+export const LinkMenuItems = styled(Link)`
 	padding: 1rem 2rem;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.3s ease-in;
-	font-size: 0.9rem;
+
+	&:hover {
+		color: ${({ theme }) => theme.colors.logo};
+	}
+	&:active {
+		color: ${({ theme }) => theme.colors.navText};
+	}
 `;
