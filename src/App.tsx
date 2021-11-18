@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { Coins, Portfolio } from './pages';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Navbar } from './components';
 import ThemeProvider from './contexts/ThemeContext';
 
@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
     transition: all 0.50s linear;
+    font-size: ${({ theme }) => theme.fonts.fontSizeRegular};
   }
 `;
 
@@ -19,10 +20,11 @@ const App = () => {
 			<GlobalStyles />
 			<Router>
 				<Navbar />
-				<Route path="/coins">
-					<Coins />
-				</Route>
-				<Portfolio />
+				<Routes>
+					<Route path="/" element={<Navigate replace to="/coins" />} />
+					<Route path="/coins" element={<Coins />} />
+					<Route path="/portfolio" element={<Portfolio />} />
+				</Routes>
 			</Router>
 		</ThemeProvider>
 	);
