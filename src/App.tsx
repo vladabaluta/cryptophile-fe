@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
     transition: all 0.50s linear;
-    font-size: ${({ theme }) => theme.fonts.fontSizeRegular};
+    font-size: ${({ theme }) => theme.fonts.regular};
   }
 `;
 

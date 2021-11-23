@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { CoinsContext } from '../../contexts/CoinsContext';
 import ICoin from '../../interfaces/ICoin';
-import { Table, Tag, Space } from 'antd';
+import { Table } from 'antd';
 import { trimDecimals } from '../../utils/trimDecimals';
 import * as S from './Coins.styles';
 

@@ -1,17 +1,17 @@
 // file for responsiveness and other css variables
 const variables = {
 	spacing: {
-		spacingExtraSmall: '0.5rem',
-		spacingSmall: '0.75rem',
-		spacingRegular: '1rem',
-		spacingMedium: '1.25rem',
-		spacingLarge: '2rem',
-		spacingExtraLarge: '2.5rem',
+		extraSmall: '0.5rem',
+		small: '0.75rem',
+		regular: '1rem',
+		medium: '1.25rem',
+		large: '2rem',
+		extraLarge: '2.5rem',
 	},
 	fonts: {
-		fontSizeSmall: '0.75rem',
-		fontSizeRegular: '1rem',
-		fontSizeLarge: '1.25rem',
+		small: '0.75rem',
+		regular: '1rem',
+		large: '1.25rem',
 	},
 	breakpoints: {
 		small: '320px',
