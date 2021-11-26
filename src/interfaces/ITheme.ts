@@ -9,6 +9,7 @@ export default interface ITheme {
 		navText: string;
 	};
 	fonts: any;
+	fontWeight: any;
 	spacing: any;
 	breakpoints: any;
 }
