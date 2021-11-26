@@ -13,6 +13,11 @@ const variables = {
 		regular: '1rem',
 		large: '1.25rem',
 	},
+	fontWeight: {
+		small: 200,
+		regular: 400,
+		bold: 700,
+	},
 	breakpoints: {
 		small: '320px',
 		medium: '672px',

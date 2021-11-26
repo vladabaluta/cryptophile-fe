@@ -1,3 +1,3 @@
 export const trimDecimals = (numberToTrim: number, numberOfDecimals: number) => {
-	return numberToTrim.toFixed(numberOfDecimals);
+	return Number(numberToTrim.toFixed(numberOfDecimals));
 };
