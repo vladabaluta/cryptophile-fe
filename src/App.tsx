@@ -30,7 +30,35 @@ const GlobalStyles = createGlobalStyle`
 			.ant-table-tbody > tr.ant-table-row:hover > td {
 				background-color : ${({ theme }) => theme.colors.tableHeadSorted};
 			}
-			
+			.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link, .ant-pagination-item-active, .ant-pagination-item {
+				background-color: ${({ theme }) => theme.colors.tableCell};
+      }
+      .ant-pagination-prev:hover .ant-pagination-item-link, .ant-pagination-next:hover .ant-pagination-item-link {
+        color: ${({ theme }) => theme.colors.tablePaginationActive};
+      }
+      .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
+        color: ${({ theme }) => theme.colors.tablePagination};
+        border-color: ${({ theme }) => theme.colors.tablePagBorder};
+      }
+      .ant-pagination-disabled .ant-pagination-item-link, .ant-pagination-disabled:hover .ant-pagination-item-link, .ant-pagination-disabled:focus-visible .ant-pagination-item-link {
+        color: ${({ theme }) => theme.colors.tablePaginationDisabled};
+        border-color: ${({ theme }) => theme.colors.tablePagBorder};
+      }
+      .ant-pagination-item {
+        border-color: ${({ theme }) => theme.colors.tablePagBorder};
+        a {
+          color: ${({ theme }) => theme.colors.tablePagination};
+        }
+        &:focus a, &:hover a {
+          color: ${({ theme }) => theme.colors.tablePaginationActive};
+        }
+      }
+      .ant-pagination-item-active {
+        border-color: ${({ theme }) => theme.colors.tablePagBorderActive};
+        a {
+          color: ${({ theme }) => theme.colors.tablePaginationActive};
+        }
+      }
 		}
 
   }

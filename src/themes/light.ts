@@ -11,6 +11,11 @@ const lightTheme = {
     tableHeadSorted: '',
     tableCell: '',
     tableBorder: '',
+    tablePagination: '',
+    tablePaginationActive: '',
+    tablePaginationDisabled: '',
+    tablePagBorder: '',
+    tablePagBorderActive: '',
   },
 };
 

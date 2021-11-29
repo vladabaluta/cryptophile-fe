@@ -11,6 +11,11 @@ const darkTheme = {
     tableHeadSorted: '#1e2021',
     tableCell: '#181a1b',
     tableBorder: '#313637',
+    tablePagination: '#b6b4b3',
+    tablePaginationActive: '#29a1f4',
+    tablePaginationDisabled: '#4a4b4b',
+    tablePagBorder: '#4a4b4b',
+    tablePagBorderActive: '#064987',
   },
 };
 

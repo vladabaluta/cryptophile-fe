@@ -11,6 +11,11 @@ export default interface ITheme {
     tableHeadSorted: string;
     tableCell: string;
     tableBorder: string;
+    tablePagination: string;
+    tablePaginationActive: string;
+    tablePaginationDisabled: string;
+    tablePagBorder: string;
+    tablePagBorderActive: string;
   };
   fonts: any;
   fontWeight: any;
