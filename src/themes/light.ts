@@ -7,6 +7,15 @@ const lightTheme = {
     link: '',
     border: '',
     navText: '#1890ff',
+    tableHead: '',
+    tableHeadSorted: '',
+    tableCell: '',
+    tableBorder: '',
+    tablePagination: '',
+    tablePaginationActive: '',
+    tablePaginationDisabled: '',
+    tablePagBorder: '',
+    tablePagBorderActive: '',
   },
 };
 
