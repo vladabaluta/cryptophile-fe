@@ -5,6 +5,6 @@ export const Coins = styled.div`
 	padding: ${({ theme }) => theme.spacing.small};
 `;
 
-export const CoinRate = styled.div`
+export const CoinCode = styled.div`
 	font-weight: ${({ theme }) => theme.fontWeight.bold};
 `;

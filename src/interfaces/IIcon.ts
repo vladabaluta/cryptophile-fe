@@ -1,6 +1,7 @@
 export default interface IIcon {
-  src: string;
-  alt: string;
-  height?: string;
-  width?: string;
+	src: string;
+	alt: string;
+	height?: string;
+	width?: string;
+	onClick?: () => void;
 }
